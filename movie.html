@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        background-image: url("https://wallpapercave.com/wp/wp4732677.jpg");
+      }
+    </style>
+    <title>Movie Kece cuy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="film.css" />
+  </head>
+  <body class="bg-dark-subtle">
+    <div class="containerWeb">
+      <div>
+        <header>
+          <nav class="navbar bg-transparant">
+            <div class="container-fluid">
+              <span class="navbar-brand mb-0 h1 text-light"
+                >Tugas Javascript</span
+              >
+            </div>
+          </nav>
+        </header>
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h1 class="text-light">Movies Fikri Ibnu Fajar</h1>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-8">
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control input-keyword"
+                    placeholder="Search Movie..."
+                  />
+                  <div class="input-group-append">
+                    <button class="btn btn-primary search-button" type="button">
+                      Search
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row movie-container"></div>
+          </div>
+
+          <!-- Awal Modal -->
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="movieDetailModal"
+            tabindex="-1"
+            aria-labelledby="movieDetailModal"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="movieDetailModal">
+                    Definition
+                  </h1>
+                </div>
+                <div class="modal-body"></div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Akhir Modal -->
+        </section>
+      </div>
+      <footer>
+        <div class="d-flex justify-content-end pe-5 clock">
+          <span id="jam">00</span>
+          <span>:</span>
+          <span id="menit">00</span>
+          <span>:</span>
+          <span id="detik">00</span>
+        </div>
+      </footer>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+}
+
+.containerWeb {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.clock {
+    font-size: 60px;
+    color: rgb(23 37 84);
+}
+
+.clock ::after {
+    font-size: 12px;
+}
+#jam::after {
+    content: 'Hours';
+}
+#menit::after {
+    content: 'Minutes';
+}
+#detik::after {
+    content: 'Sec';
+}
